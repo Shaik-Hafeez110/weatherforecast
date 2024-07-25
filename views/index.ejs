@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather_web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="left-container">
+          <img src="images/mountain.jpg" alt="">
+            <h1 class="title">Weather Detector</h1>
+            <form action="/" method="post">
+              <input type="text" name="city" value="" placeholder="Enter the City Name">
+              <button type="submit" name="button">Search</button>
+            </form>
+            <p><%= Para %></p>
+        </div>
+        <div class="right-container">
+          <h2><%= City %></h2>
+          <h1>Today</h1>
+          <div class="right-container-info1">
+            <h1><%= Temp %><sup>o</sup>C</h1>
+            <div class="info">
+              <h1><%= Weather %></h1>
+              <img src=<%= icon %> alt="type-image">
+            </div>
+            <p><%= kindOfday %></p>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="right-container-info2">
+            <p>Wind Speed: <%= windSpeed %></p>
+            <p>Humidity: <%= humidity %></p>
+            <p>Pressure:<%= pressure %></p>
+            <p>Sunrise:<%= sunrise %></p>
+            <p>Sunset:<%= sunset %></p>
+          </div>
+          <p>@copyright 2022</p>
+        </div>
+    </div>
+    <!-- <p>@copyright</p> -->
+    <!-- <form action="/" method="post">
+      <label for="">City Name</label>
+      <input type="" name="city" value="" placeholder="city">
+      <button type="submit" name="button">submit</button>
+    </form> -->
+
+    <script type="text/javascript">
+    </script>
+  </body>
+</html>
